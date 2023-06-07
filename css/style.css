@@ -1,0 +1,73 @@
+.container {
+
+    width: 200px;
+    height: 80px;
+    border: 1px dashed black;
+    box-radius: 5px;
+
+
+
+
+}
+
+
+.circle {
+
+
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+    tranform:translateX(0px) rotate(0deg);
+    transition:all 5s;
+    border-radius: 0px;
+    position:absolute;
+
+
+}
+
+
+.container:hover .circle {
+
+transform: translateX(150px) rotate(360deg);
+border-radius:50%;
+
+
+}
+
+.container:hover span {
+
+transform:translateX(0);
+opacity:1;
+
+}
+
+
+span { 
+    
+    transform: translateX(300px);
+    display: inline-block;
+    opacity: 0;
+    transition:all 2s 8s;
+
+
+}
+
+
+
+.one { transition-delay: 2s;}
+.two { transition-delay: 4s;}
+.three { transition-delay: 6s;}
+.four {transition-delay:8s;}
+
+
+img { width: 200px;}
+
+img:hover {filter:grayscale(80%);}
+
+
+input { width: 200px;
+        transition: width 3s;
+
+}
+
+input:focus { width: 300px;}
